@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upwork</title>
+    <style>
+        /* CSS for the header container */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff; /* Background color for the header */
+            color: #0d0d0d; /* Text color */
+            padding: 10px 20px; /* Padding for the header */
+
+        }
+
+        /* CSS for the left section (logo and word list) */
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px; /* Adjust the width of your logo */
+            height: auto;
+            margin-right: 20px; /* Spacing between logo and word list */
+        }
+
+        .word-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .word-list li {
+            margin-right: 10px; /* Spacing between words in the list */
+        }
+
+        /* CSS for the center section (search bar) */
+        .center-section {
+            flex-grow: 1; /* Allows the search bar to expand and fill available space */
+            
+
+        }
+
+        .search-bar {
+            width: 50%; /* Full width of the available space */
+            padding: 10px;
+            border-radius: 100px;
+            border-color: #1ce10a;
+            
+        }
+
+        /* CSS for the right section (buttons) */
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            margin-left: 10px; /* Spacing between buttons */
+            background-color: #1ce10a; /* Button background color */
+            color: #f1eeee; /* Button text color */
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the buttons on hover */
+        .button:hover {
+            background-color: #666; /* Change the background color on hover */
+            color: #fff; /* Change the text color on hover */
+        }
+
+
+        .main-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* CSS for the top side (list of items in a row) */
+        .top-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff; /* Background color for the top side */
+        }
+
+        .item-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .item {
+            margin-right: 10px; /* Spacing between items */
+        }
+
+        /* CSS for the left side (content with a button) */
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            font-size: 60px;
+            line-height: 50%;
+        }
+
+        .content {
+            margin-bottom: 20px; /* Spacing between content and button */
+        }
+
+        .button {
+            background-color: #129906; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the button on hover */
+        .button:hover {
+            background-color: #016014; /* Change the background color on hover */
+        }
+
+        /* CSS for the right side (image) */
+        .right-side {
+            text-align: right;
+        }
+
+        .large-image {
+            width: 250%; /* Make the image responsive */
+            max-width: 50%;
+            height: auto;
+            float: right;
+            width: 35%;
+            right: 70px;
+            top: 145px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Container -->
+    <header class="header">
+        <!-- Left Section (Logo and Word List) -->
+        <div class="left-section">
+            <img src="Images/UP Work Logo.png" alt="Logo" class="logo">
+            <ul class="word-list">
+                <li>Find Telent</li>
+                <li>Find Work</li>
+                <li>Why Upwork</li>
+                <li>Enterprise</li>
+            </ul>
+        </div>
+
+        <!-- Center Section (Search Bar) -->
+        <div class="center-section">
+            <input type="text" placeholder="Search..." class="search-bar"> 
+        </div>
+
+        <!-- Right Section (Buttons) -->
+        <div class="right-section">
+            <button class="button">Log in</button>
+            <button class="button">Sign up</button>
+        </div>
+    </header>
+
+    <section class="main-section">
+        <!-- Top Side (List of Items in a Row) -->
+        <div class="top-side">
+            <ul class="item-list">
+                <li class="item">Development & IT</li>
+                <li class="item">AI Services</li>
+                <li class="item">Design & Creative</li>
+                <li class="item">Sales & Marketing</li>
+                <li class="item">Admin & Cutomer Support</li>
+                <li class="item">More</li>
+            </ul>
+        </div>
+
+        <!-- Left Side (Content with Button) -->
+        <div class="left-side">
+            <div class="content">
+                <h2 style="color: rgb(15, 174, 15);">Home work</h2>
+                <h2 style="color: rgb(11, 172, 11);">Should Work</h2>
+                <p style="font-size: 30px;">
+                    Forget the old rules. You can have the best people.
+                    <br>
+                    Right now. Right here..</p>
+                <!-- Add your content here -->
+            </div>
+            <button class="button">Get Started</button>
+        </div>
+
+        <!-- Right Side (Image) -->
+        <div class="right-side">
+            <img src="Images/Main Image.png" alt="Large Image" class="large-image">
+        </div>
+    </section>
+</body>
+</html>
